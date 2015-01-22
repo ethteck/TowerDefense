@@ -1,0 +1,31 @@
+REFACTORING / FORMATTING:
+clean onMouseMove
+better collision detection
+	
+ADD FEATURE:
+	the m_ schnip on everything	
+	work on available spaces vector of vectors of points
+	
+	Create EnemyManager class to
+		keep track of enemies and hold the enemies vector
+		keep track of total spawned enemies
+		spawn enemies based on frames, allowing for multiple waves
+	instance names need to change (all towers shouldn't be called "mcTower")
+	SEMI HOMING THINGS!
+	towers of varying sizes (let's start with a 3x2)
+	target based on enemy level (once enemy level exists)
+	enemies that can
+		go "invisible" to towers (aren't added to targets list)
+		go indestructible momentarily (hit but to no avail)
+		ignore all bullets momentarily (pass through)
+	placeholder pause graphics
+	implement better collision detection for VERY fast bullets (time based, using formulae and schnip)
+	maybe have towers pass bullet stats (speed, power, crit stuff) to the bullet
+	
+	if there are multiple of the same best target results, filter further
+
+BUG:
+
+LOOK AT LATER:
+	tower A's range thing overlays in front of tower B if both A and B are selected and A is selected after B
+	depth bullshit
